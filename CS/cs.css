@@ -1,0 +1,73 @@
+#innerContainer {
+margin: 3em;
+}
+
+#csTitle {
+    margin: 1em 1em;
+}
+#csIlustriation {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+img {
+    width: 45%;
+    height: auto;
+}
+
+#ilustrationText {
+    padding: 2em;
+    background-color: #1E3932;
+    width: max-content;
+    min-height: max-content;
+    border-radius: 25px;
+    color: white;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#csMapGrid {
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    justify-items: stretch;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px rgba(57, 57, 57, 0.2);
+}
+.csMapContent {
+    padding: 0 1em;
+    font-family: 'Raleway', sans-serif;
+    justify-items: stretch;
+    align-items: center;
+    background-color: #1E3932;
+    font-weight: 400;
+    color: white;
+}
+
+#csMapExplination {
+    background-color: #d4e9e2;
+    grid-column: 1/4;
+    padding: 2em 8em;
+    color: black;
+}
+
+.selected {
+    background-color: #d4e9e2;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    #csIlustriation {
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
+        }
+
+    #ilustrationText {
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    width: 90%;
+    }
+}
