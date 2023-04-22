@@ -7,27 +7,56 @@
     <title>CS</title>
     <link rel="stylesheet" href="../type.css" />
     <link rel="stylesheet" href="cs.css" />
+    <script
+      src="https://kit.fontawesome.com/62d626e4bd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <div id="container">
-      <h1 id="csTitle">Customer Support</h1>
-      <nav>
+  <!-- nav content -->
+  <nav>
+    <p><b>Barista Basics Guide</b></p>
+    <div id="desktopNav">
+      <a href="../index.html" class="navButtons">Home</a>
+      <!-- <a href="CS/CS.html" class="navButtons">Customer Support</a> -->
+      <a href="../CoffeeAccademy/academy.html" class="navButtons"
+        >Coffee Academy</a
+      >
+      <a href="" class="navButtons">Hot Bar</a>
+      <a href="" class="navButtons">Cold Bar</a>
+      <a href="" class="navButtons">Register</a>
+      <a href="" class="navButtons">Drive Thru</a>
+    </div>
+    <div id="hamburgerMenu" class="visible-mobile">
+      <i class="fa-solid fa-bars visible-mobile"></i>
+      <div class="dropdown-content">
         <a href="../index.html" class="navButtons">Home</a>
-        <!-- <a href="" class="navButtons">Customer Support</a> -->
-        <a href="" class="navButtons">Coffee Academy</a>
+        <!-- <a href="CS/CS.html" class="navButtons">Customer Support</a> -->
+        <a href="../CoffeeAccademy/academy.html" class="navButtons"
+          >Coffee Academy</a
+        >
         <a href="" class="navButtons">Hot Bar</a>
         <a href="" class="navButtons">Cold Bar</a>
         <a href="" class="navButtons">Register</a>
         <a href="" class="navButtons">Drive Thru</a>
-      </nav>
+      </div>
+    </div>
+  </nav>
+  <!-- nav content -->
+  <body>
+    <div id="container">
       <div id="innerContainer">
+        <h1 id="csTitle">Customer Support</h1>
         <h3>💡 Quick Guide</h3>
         <div id="csIlustriation">
           <img src="img/csMap.png" alt="map of cs cycle steps" />
           <div id="ilustrationText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-            corporis at tenetur maxime repudiandae in eaque ipsa incidunt soluta
-            officia.
+            The CS cycle is a support possition where you are tasked with
+            supporting the store in 3 main ways. By
+            <br /><b>Brewing the Coffee</b> <br /><b>Checking Loby</b> <br /><b
+              >Cycle Tasks</b
+            >
+            <br />Remember to keep the CS timer with you to keep track where you
+            are in the cycle.
           </div>
         </div>
 
@@ -50,6 +79,7 @@
             <div class="csMapContentInfo hidden" id="checkLobbyInfo">
               <p>🧹 Check Lobby (including trashcans condiment bar)</p>
               <p>🪠 Check Restrooms too</p>
+              <p>🧽 Clean High Touch areas</p>
             </div>
             <div class="csMapContentInfo hidden" id="cycleTasksInfo">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni,
@@ -64,7 +94,42 @@
             </div>
           </div>
         </div>
-        <h3>📜 More Info</h3>
+        <h3>More Info</h3>
+        <div id="csMoreInfoGrid">
+          <div class="csGridTitle" id="gridBrew">1. Brew Coffee</div>
+          <div id="gridBrewInfo">
+            <h4>Title</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            fugiat voluptatem veniam praesentium suscipit omnis quis aut ipsum
+            totam, tempore, aperiam, dicta reiciendis. Nostrum tenetur harum
+            incidunt sapiente voluptatibus? Quaerat repudiandae ratione unde
+            doloremque cupiditate. Sint quod dolores sit dolor?
+          </div>
+          <div class="csGridTitle" id="gridCheckLobby">2. Check Loby</div>
+          <div id="gridCheckLobbyInfo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            sunt laboriosam corporis, deserunt ullam asperiores quaerat quos,
+            consequatur tenetur sed itaque perspiciatis atque rem cumque? Ut
+            voluptate nulla cupiditate quaerat fuga accusantium distinctio
+            molestiae, dolorem assumenda voluptatum numquam inventore in?
+          </div>
+          <div class="csGridTitle" id="gridCycleTasks">3. Cycle Tasks</div>
+          <div id="gridCycleTasksInfo">
+            <h4>Randome Title</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            vero velit et excepturi dolores aliquid natus mollitia nostrum
+            doloribus, minima aut ipsam. Quisquam, amet modi tenetur officia
+            aliquid sint accusamus natus pariatur! Mollitia nostrum eos omnis ex
+            consequatur asperiores tenetur.
+            <h4>Testing</h4>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            sunt laboriosam corporis, deserunt ullam asperiores quaerat quos,
+            consequatur tenetur sed itaque perspiciatis atque rem cumque? Ut
+            voluptate nulla cupiditate quaerat fuga accusantium distinctio
+            molestiae, dolorem assumenda voluptatum numquam inventore in?
+          </div>
+        </div>
+        <p></p>
       </div>
     </div>
     <script src="cs.js"></script>

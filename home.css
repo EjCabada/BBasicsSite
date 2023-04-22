@@ -14,7 +14,7 @@
 }
 
 #quickContentSlider {
-    background-color: #006241;
+    background-color: rgb(0, 109, 0);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,18 +48,25 @@ overflow-y: scroll;
     transform: scale(1.1);
 }
 
+#linksMainTitle {
+    width: 95%;
+    margin: auto;
+}
+
 .pageLinks {
     border-radius: 20px;
     padding: 1em;
-    margin: 1em;
+    margin: 3em;
     min-height: 5em;
     box-shadow: 0px 0px 15px 1px rgba(153,150,153,1);
     transition: .5s;
+    border: 5px solid rgb(169, 142, 91);
 }
 
 .pageLinks:hover {
     background-color: rgb(0, 109, 0);
     color: white;
+    border-color: rgb(0, 109, 0);
 }
 
 #expirationDates {
@@ -138,4 +145,16 @@ details[open] summary::marker {
     #linksGrid {
       grid-template-columns: 1fr;
     }
+
+    #quickBoxes {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .pageLinks{
+        margin: 1em 0;
+    }
+
+    
+
   }
