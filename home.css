@@ -69,7 +69,7 @@ overflow-y: scroll;
     border-color: rgb(0, 109, 0);
 }
 
-#expirationDates {
+.quickLinkBackground {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,11 +83,12 @@ overflow-y: scroll;
     backdrop-filter: blur(2px);
     z-index: 10;
 }
- #expirationBox {
+ .quickLinkBox {
     background-color: white;
     border-radius: 10px;
     max-height: 80vh;
-    width: 45%;
+    width: 100%;
+    max-width: 900px;
     padding: 2em;
     z-index: 20;
     overflow: scroll;
@@ -95,9 +96,9 @@ overflow-y: scroll;
 
  #expirationGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     overflow: scroll;
-    margin: 0 4em;
+    margin: 0 auto;
  }
 
  summary {
@@ -139,6 +140,27 @@ details[open] summary::marker {
     border-radius: 50%;
     height: 6em;
     width: 6em;
+}
+
+#quickLinkTitleBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.returnButton{
+    background-color: var(--colorGreenAccent);
+    color: white;
+    border: none;
+    padding: .5em 2em;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.returnButton:hover {
+    background-color: var(--colorHouseGreen);
 }
 
 @media (max-width: 700px) {

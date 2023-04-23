@@ -3,7 +3,8 @@
 
 let expirationQuickBox = document.querySelector('#expirationQuickBox');
 let expirationBox = document.querySelector('#expirationDates');
-let csPageLink = document.querySelector('#csPageLink')
+let csPageLink = document.querySelector('#csPageLink');
+let returnButton = document.querySelector('.returnButton');
 
 
 expirationQuickBox.addEventListener('click', function() {
@@ -11,12 +12,12 @@ expirationQuickBox.addEventListener('click', function() {
     expirationBox.classList.add('visible');
 });
 
-expirationBox.addEventListener('click', function() {
+returnButton.addEventListener('click', function() {
     expirationBox.classList.remove('visible');
     expirationBox.classList.add('hidden');
 })
 
-csPageLink.addEventListener('click' , function() {
-    window.location.href = 'CS/CS.html';
-})
+// csPageLink.addEventListener('click' , function() {
+//     window.location.href = 'CS/CS.html';
+// })
 
