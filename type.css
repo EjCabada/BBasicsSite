@@ -155,7 +155,7 @@ a:hover{
     color: black;
   }
 
-  #hamburgerMenu:hover .dropdown-content {
+  #hamburgerMenu:hover .dropdown-content, #hamburgerMenu:active .dropdown-content {
     display: block;
 }
 
@@ -197,7 +197,19 @@ border-radius: 12px;
 @media (min-width: 900px) {
     #hamburgerMenu {
         visibility: hidden;
-        max-width: 0%;
+        width: 0px;
+        height: 0px;
+    }
+
+    i {
+        visibility: hidden;
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .fa-bars:before {
+        display: none;
     }
 }
 
