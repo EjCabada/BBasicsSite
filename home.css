@@ -142,7 +142,7 @@ details[open] summary::marker {
     width: 6em;
 }
 
-#quickLinkTitleBox{
+.quickLinkTitleBox{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,6 +162,39 @@ details[open] summary::marker {
 .returnButton:hover {
     background-color: var(--colorHouseGreen);
 }
+
+.prepContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.prepBox {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    width: 95%;
+    background-color: var(--colorGreenLight);
+    margin-bottom: 2em;
+    height: fit-content;
+}
+
+.innerPrepBox{
+    background-color: var(--colorHouseGreen);
+    color: white;
+    padding: 1em 1em;
+    font-weight: 700;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    min-width: 30%;
+}
+
+.prepExp {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    max-width: 95%;
+}
+
 
 @media (max-width: 700px) {
     #linksGrid {

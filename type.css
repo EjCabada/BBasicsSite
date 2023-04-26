@@ -194,7 +194,7 @@ padding: 1em;
 border-radius: 12px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     #hamburgerMenu {
         visibility: hidden;
         width: 0px;
@@ -213,7 +213,7 @@ border-radius: 12px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     nav {
         justify-content: space-between;
     }

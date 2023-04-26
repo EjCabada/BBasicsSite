@@ -28,7 +28,9 @@
         <a href="" class="navButtons">Drive Thru</a>
       </div>
       <div id="hamburgerMenu" class="visible-mobile">
-        <i class="fa-solid fa-bars visible-mobile"></i>
+        <button id="hamburgerMenuBtn">
+          <i class="fa-solid fa-bars visible-mobile"></i>
+        </button>
         <div class="dropdown-content">
           <!-- <a href="../index.html" class="navButtons">Home</a> -->
           <a href="CS/CS.html" class="navButtons">Customer Support</a>
@@ -63,6 +65,8 @@
           <p>Content goes here</p>
         </details> -->
       </div>
+
+      <!-- begining of quick guide -->
       <div id="quickContentSlider">
         <h3 id="quickBoxTitle">Quick Guide</h3>
         <div id="quickBoxes">
@@ -70,22 +74,17 @@
             <h4><b> Product Shelf Life</b></h4>
             <p>Expiration dates for most products that we use in store</p>
           </div>
-          <div class="quickContent">
+          <div class="quickContent" id="prepQuickBox">
             <h4><b>Prep</b></h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-              aliquam.
-            </p>
+            <p>Quick Guide on how to do prep tasks</p>
           </div>
-          <div class="quickContent">
+          <div class="quickContent" id="barQuickBox">
             <h4><b>Bar Help</b></h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-              aliquam.
-            </p>
+            <p>Shots and Syrup pumps per drink</p>
           </div>
         </div>
       </div>
+
       <h3 id="linksMainTitle">Roles: Detailed Explinations</h3>
       <div id="linksGrid">
         <div class="pageLinks" id="csPageLink">
@@ -132,9 +131,11 @@
         </div>
       </div>
     </div>
+
+    <!-- QuickGuide Items -->
     <div class="quickLinkBackground hidden" id="expirationDates">
       <div class="quickLinkBox">
-        <div id="quickLinkTitleBox">
+        <div class="quickLinkTitleBox">
           <h3>Product Shelf Life</h3>
           <button class="returnButton">Return</button>
         </div>
@@ -163,13 +164,109 @@
         </div>
       </div>
     </div>
-
-    <div class="hidden" id="prep">
-      <div id="prepBox"></div>
+    
+    <div class="quickLinkBackground hidden" id="prep">
+      <div class="quickLinkBox">
+        <div class="quickLinkTitleBox">
+          <h3>Prep</h3>
+          <button class="returnButton">Return</button>
+        </div>
+        <div class="prepContent">
+          <div class="prepBox">
+            <div class="innerPrepBox">Whips</div>
+            <div class="prepExp">
+              <li>4 pumps of Vanila into Streaming Pitcher</li>
+              <li>Heavy Cream to the max line in pitcher
+              </li>
+              <li>Add all content into the Whip Canister</li>
+              <li>Screw on top and screw on Co2 cartridge</li>
+              <li>Shake vigourously(10x) and let it sit</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Sweet Cream</div>
+            <div class="prepExp">
+              <li>In 2L pitcher add 1L of heavy cream
+              </li>
+              <li>350ml of Vanilla</li>
+              <li>2% Milk to 2L line</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Refreshers</div>
+            <div class="prepExp">
+              <li>Add Juice Concentrate to 1L line in 2L pitcher</li>
+              <li>Add cold water to top</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Tea</div>
+            <div class="prepExp">
+              <li>Add tea sachel to 2L pitcher</li>
+              <li>Hot Water to 1L line</li>
+              <li>Brew for 5min</li>
+              <li>1 Venti scoop ice</li>
+              <li>Add Cold Water to 2L line</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Lemonade</div>
+            <div class="prepExp">
+              <li>Pour Lemonade concentrate to .75 line in 2L pitcher</li>
+              <li>Add cold water to 2L line</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Mocha</div>
+            <div class="prepExp">
+              <li>Add 2L of hot water into Round 3.5L pitcher</li>
+              <li>Add small amounts of 2lb bag of Mocha slowly and wisk</li>
+              <li>Repeat adding small amounts of mocha and wisking till done</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Frap Roast</div>
+            <div class="prepExp"></div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Ice Coffee</div>
+            <div class="prepExp">
+              <li>(1:1 ratio of ice to iced coffee)</li>
+              <li>Pour ic Coffee into 2L pitcher and add to ic Coffee container</li>
+              <li>2L of ice into the the Iced Coffee Container</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Cold Brew</div>
+            <div class="prepExp">
+              <li>Grind full bag of coldbrew beans on [french-press]</li>
+              <li>Pour grounds and coldbrew filter into coldbrew maker</li>
+              <li>Pour 12L of water</li>
+              <li>Set the 20hr timer</li>
+            </div>
+          </div>
+          <div class="prepBox">
+            <div class="innerPrepBox">Cold Brew Kegs</div>
+            <div class="prepExp">
+              <li>Add 4L of water and 2L of ice into cube</li>
+              <li>Wisk till ice is fully melted</li>
+              <li>Add 5L(full cube) of coldbrew concentrate into keg</li>
+              <li>Add iced water into keg</li>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="hidden" id="barHelp">
-      <div id="barBox"></div>
+    <div class="quickLinkBackground hidden" id="barHelp">
+      <div class="quickLinkBox">
+        <div class="quickLinkTitleBox">
+          <h3>
+            Bar Help
+          </h3>
+          <h4>Shots and Syrup Pumps</h4>
+          <button class="returnButton">Return</button>
+        </div>
     </div>
 
     <script src="home.js"></script>
