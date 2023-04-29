@@ -3,7 +3,7 @@
 
 
 :root {
-    --colorGreenStarbucks :#006241;
+    --colorGreenStarbucks: #006241;
     --colorGreenAccent: #00754A;
     --colorGreenLight: #d4e9e2;
     --colorHouseGreen: #1E3932;
@@ -69,7 +69,7 @@ p {
     width: 100%;
     max-width: 1200px;
     min-height: 80vh;
-    box-shadow: 0px 0px 15px 1px rgba(153,150,153,1);
+    box-shadow: 0px 0px 15px 1px rgba(153, 150, 153, 1);
     margin: 2em auto;
     border-radius: 20px;
     display: flex;
@@ -83,21 +83,21 @@ nav {
     background-color: white;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.75);
 }
 
 a {
-  text-decoration: none;
-  padding: .5em 2em;
-  border-radius: 100px;
-  background-color: rgb(169, 142, 91);
-  color: white;
-  font-size: 1em;
-  margin: 0 1em;
-  align-items: center;
+    text-decoration: none;
+    padding: .5em 2em;
+    border-radius: 100px;
+    background-color: rgb(169, 142, 91);
+    color: white;
+    font-size: 1em;
+    margin: 0 1em;
+    align-items: center;
 }
 
-a:hover{
+a:hover {
     background-color: #00754A;
 }
 
@@ -115,7 +115,7 @@ a:hover{
   } */
 
 #innerContainer {
-    margin:auto;
+    margin: auto;
     width: 90%;
 }
 
@@ -136,39 +136,40 @@ a:hover{
     right: 0;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     margin-right: .5em;
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     color: white;
     padding: 0, 1em;
     margin: 1em 1em;
     text-decoration: none;
     display: block;
     justify-content: flex-end;
-  }
+}
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #dfc49d;
     color: black;
-  }
+}
 
-  #hamburgerMenu:hover .dropdown-content, #hamburgerMenu:active .dropdown-content {
+#hamburgerMenu:hover .dropdown-content,
+#hamburgerMenu:active .dropdown-content {
     display: block;
 }
 
-  #hamburgerMenu:hover i{
+#hamburgerMenu:hover #hamburgerMenu:active i {
     transform: rotate(90deg);
-  }
+}
 
 
 /* .visible-mobile {
     display: inline-block;
   } */
 
-  .grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2em;
@@ -177,21 +178,21 @@ a:hover{
 }
 
 .gridTitle {
-align-self: center;
-justify-items: start;
-background-color: var(--colorGreenAccent);
-color: white;
-padding: 1em;
-border-radius: 12px;
+    align-self: center;
+    justify-items: start;
+    background-color: var(--colorGreenAccent);
+    color: white;
+    padding: 1em;
+    border-radius: 12px;
 }
 
 .gridInfo {
-align-self: center;
-justify-items: start;
-background-color: var(--colorGoldLight);
-color: black;
-padding: 1em;
-border-radius: 12px;
+    align-self: center;
+    justify-items: start;
+    background-color: var(--colorGoldLight);
+    color: black;
+    padding: 1em;
+    border-radius: 12px;
 }
 
 @media (min-width: 1000px) {
